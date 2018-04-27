@@ -1,0 +1,27 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <p>
+      <label>First Name:</label>
+      <input type="text" [(ngModel)]="application.firstName" placeholder="John" name="firstName">
+    </p>
+    <p>
+      <label>Last Name:</label>
+      <input type="text" [(ngModel)]="application.lastName" placeholder="Doe" name="lastName">
+    </p>
+    <p>
+      <label>Annual Salary:</label>
+      <input type="number" [(ngModel)]="application.annualSalary" name="annualSalary" min="0">
+    </p>
+    <p>
+      <label>Super Rate:</label>
+      <input type="number" [(ngModel)]="application.superRate" name="superRate" min="0" max="12">
+    </p>
+    <p>
+      <label>Start Date:</label>
+      <input type="date" [(ngModel)]="application.paymentStartDate" name="paymentStartDate" min="2017-01-01" max="2018-12-31">
+    </p>
+    <p>
+        <button class="btn btn-success" type="submit" >Submit</button>
+    </p>
+  </form>
+</div>

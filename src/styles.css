@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+form label {
+    text-align: left;
+    float: left;
+    clear: both;
+   width: 40%;
+   margin: auto;
+   padding: 10px;
+}
+
+form p select {width: 23%}
+#preview {
+  height: 500px;
+  width: 50%;
+  margin: auto;
+  border: solid;
+}
